@@ -1,0 +1,27 @@
+---
+swagger: '2.0'
+info:
+  description: Portfolio Website
+  version: '1.0'
+  title: portfolio
+  contact:
+    email: fill-me@test.com
+host: fill-me.test.com
+basePath: "/"
+schemes:
+- https
+produces:
+- application/json
+paths:
+  "/status":
+    get:
+      description: 'Displays status using goStateModule.'
+      responses:
+        '200':
+          description: OK
+  "/hello":
+    get:
+      description: 'Hello!'
+      responses:
+        '200':
+          description: OK
