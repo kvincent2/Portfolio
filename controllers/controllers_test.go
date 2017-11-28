@@ -83,7 +83,7 @@ func TestGetProjects(t *testing.T) {
 
 				repos := GetProjects()
 				// validate code is what is expected
-				g.Assert(len(repos)).Equal(4)
+				g.Assert(len(repos)).Equal(5)
 			})
 		})
 	}
