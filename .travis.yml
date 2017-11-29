@@ -4,11 +4,12 @@ go:
   - 1.9.x
 matrix:
   fast_finish: true
-script:
+install:
   - go get "github.com/sirupsen/logrus"
   - go get "github.com/gin-gonic/gin"
   - go get "github.com/google/go-github/github"
   - go get "golang.org/x/oauth2"
-  - go get "github.com/franela/goblin"      
-  - go test ...
+  - go get "github.com/franela/goblin"    
+script:
+  - go test ./...
 

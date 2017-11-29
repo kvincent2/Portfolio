@@ -37,6 +37,7 @@ func TestHello(t *testing.T) {
 	g := goblin.Goblin(t)
 
 	hello := make(map[string]string)
+	hello["heading"] = "Portfolio Website"
 	hello["name"] = "Kristina Vincent"
 
 	tests := []struct {
