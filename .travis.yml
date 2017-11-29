@@ -5,6 +5,10 @@ go:
 matrix:
   fast_finish: true
 script:
-  - go get -t -v ./...
-  - go test -v -race ./...
+  - go get "github.com/sirupsen/logrus"
+  - go get "github.com/gin-gonic/gin"
+  - go get "github.com/google/go-github/github"
+  - go get "golang.org/x/oauth2"
+  - go get "github.com/franela/goblin"      
+  - go test ...
 
