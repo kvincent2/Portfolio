@@ -13,6 +13,7 @@ func GetHello() (int, map[string]string, error) {
 	status := 200
 	body := make(map[string]string)
 	body["name"] = "Kristina Vincent"
+	body["heading"] = "Portfolio Website"
 
 	return status, body, nil
 }

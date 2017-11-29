@@ -12,7 +12,7 @@ import (
 // add Github goSDK here
 func GetProjects() ([]*github.Repository) {
 
-	log.Info("Handling request for /hello")
+	log.Info(os.Getenv("GITHUB_PAT"))
 
 	ctx := context.Background()
 	ts := oauth2.StaticTokenSource(

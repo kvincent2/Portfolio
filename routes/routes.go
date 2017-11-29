@@ -66,6 +66,7 @@ func hello_ui(c *gin.Context) {
 	projects := controllers.GetProjects()
 	c.HTML(code, "main.gtpl", map[string]interface{}{
 		"Name":     body["name"],
+		"Heading":	body["heading"],
 		"Projects": projects,
 	})
 }
