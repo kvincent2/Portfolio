@@ -3,8 +3,6 @@ language: go
 go:
   - 1.9.x
 matrix:
-  allow_failures:
-    - go: master
   fast_finish: true
 script:
   - go get "github.com/sirupsen/logrus"
