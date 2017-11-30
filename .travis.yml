@@ -1,5 +1,7 @@
 sudo: false
 language: go
+services: 
+  - docker
 go:
   - 1.9.x
 matrix:
@@ -12,4 +14,7 @@ install:
   - go get "github.com/franela/goblin"    
 script:
   - go test ./...
+  - GOOS=linux GOARCH=amd64 go build -o portfolio
+  - docker build .
+
 
