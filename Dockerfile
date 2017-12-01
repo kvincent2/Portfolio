@@ -10,3 +10,5 @@ WORKDIR "/"
 
 CMD [ "/portfolio"]
 EXPOSE 8080
+
+LABEL 	maintainer="Kristina Vincent <vincentkb@live.com> <https://github.com/kvincent2>"

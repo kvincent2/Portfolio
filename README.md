@@ -26,4 +26,8 @@ To run the unit tests on the packages included as a part of this application, ru
   ```
 After making changes to any of these packages, please update the testing as needed, and verify by running the above command.
 
+##Running on Docker Container
+Pull container from DockerHub using 'docker pull vincentkb0823/portfolio'
+Run using 'docker run -p 8080:8080 -e GITHUB_PAT=[github access key] vincentkb0823/portfolio'
+
 
