@@ -28,24 +28,24 @@ func Test(t *testing.T) {
 		})
 	})
 	// Test the hello endpoint
-	g.Describe("Hello Endpoint", func() {
-		g.It("Should should return 200", func() {
-			w := performRequest(r, "GET", "/v1/hello", nil)
-			g.Assert(w.Code).Equal(http.StatusOK)
-		})
-	})
-	// Test the hello_ui endpoint
-	g.Describe("Hello_UI Endpoint", func() {
-		g.It("Should should return 200", func() {
-			w := performRequest(r, "GET", "/v1/hello_ui", nil)
-			g.Assert(w.Code).Equal(http.StatusOK)
-		})
-	})
-	// Test the /v1/styles/main.css endpoint
-	g.Describe("/v1/styles/main.css Endpoint", func() {
-		g.It("Should should return 200", func() {
-			w := performRequest(r, "GET", "/v1/styles/main.css", nil)
-			g.Assert(w.Code).Equal(http.StatusOK)
-		})
-	})
+	// g.Describe("Hello Endpoint", func() {
+	// 	g.It("Should should return 200", func() {
+	// 		w := performRequest(r, "GET", "/v1/hello", nil)
+	// 		g.Assert(w.Code).Equal(http.StatusOK)
+	// 	})
+	// })
+	// // Test the hello_ui endpoint
+	// g.Describe("Hello_UI Endpoint", func() {
+	// 	g.It("Should should return 200", func() {
+	// 		w := performRequest(r, "GET", "/v1/hello_ui", nil)
+	// 		g.Assert(w.Code).Equal(http.StatusOK)
+	// 	})
+	// })
+	// // Test the /v1/styles/main.css endpoint
+	// g.Describe("/v1/styles/main.css Endpoint", func() {
+	// 	g.It("Should should return 200", func() {
+	// 		w := performRequest(r, "GET", "/v1/styles/main.css", nil)
+	// 		g.Assert(w.Code).Equal(http.StatusOK)
+	// 	})
+	// })
 }

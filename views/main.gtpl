@@ -5,12 +5,17 @@
     </head>
     <body>
         <h1>{{ .Name }}</h1>
-        {{ range .Projects }}
-            <a href="{{ .HTMLURL }}">{{ .HTMLURL }}</a>
-            <p>{{ .Description }}</p>
+        <h2>{{ .Heading }}</h2>
+        <img src="http://krisvincent.com/img/kristina.jpg" alt="ProfilePic">
+        {{ range .Projects }}            
+            <div>{{ .Name }}:</div>
+            <ul>
+            <li><a href="{{ .HTMLURL }}">{{ .HTMLURL }}</a></li>
+            <li>Description: {{ .Description }}</li>
+            <li>Written in: {{ .Language }}</li>
+            </ul>
         {{ end }}
         <br />
         <br />
-        <img src="http://cultofthepartyparrot.com/parrots/hd/gentlemanparrot.gif" />
     </body>
 </html>
